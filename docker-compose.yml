@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  app:
+    image: reto-wally:1.0.0
+    container_name: reto_wally
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    command: npm run start:dev
+    ports:
+      - 2000:2000
+    volumes:
+      - .:/app
+      - /app/node_modules
+    restart: unless-stopped
