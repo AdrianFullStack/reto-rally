@@ -8,6 +8,12 @@
 $ npm install
 ```
 
+```bash
+# Agregar valores a los Secrets
+JWT_ACCESS_SECRET=
+JWT_REFRESH_SECRET=
+```
+
 ## Running the app
 
 ```bash
